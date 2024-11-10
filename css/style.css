@@ -517,6 +517,10 @@ transition: var(--transition);
     text-align: left;
 }
 
+.course-info a {
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+
+}
 /* .course:hover {
     background: #d6d9dd;
     border: 1px solid #F0F6FF;
@@ -535,8 +539,24 @@ img {
     display: block;
     object-fit: cover;
 }
+
 .answer-icon {
-    margin-right: 15px;
+    margin-right: 10px;
+    font-size: 16px;
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.answer {
+    display: flex;
+    align-items: center;
+}
+.line {
+    width: 100%;
+    height: 2px;
+    margin-top: 15px;
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    border-radius: 20px;
 }
 
 /* new part */
