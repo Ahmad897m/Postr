@@ -62,24 +62,23 @@
                         <a href="#faq" class="nav-item nav-link">FAQ</a>
                         <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Start Free Trial</a>
+                    <a href="#" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block" id="loginLink">Start Free Trial</a>
                 </div>
             </nav>
 
             <div class="container-xxl bg-primary hero-header " >
                 <div class="container px-lg-5">
                     <div class="row g-5">
-                        <div class="col-lg-8 text-center text-lg-start wow fadeInUp" data-wow-delay="0.1s">
-                            <h1 class="text-white mb-4 animated slideInDown">Unlimited Posting
-                                plan, edit, and schedule </h1>
+                        <div class="col-lg-6 text-center text-lg-start wow fadeInUp" data-wow-delay="0.1s">
+                            <h1 class="text-white mb-4 animated slideInDown">Unleash your ideas, plan ahead, and post with limitless possibilities!</h1>
                             <p class="text-white pb-3 animated slideInDown">All type of posts and live streams 
                                 All your social media platforms</p>
-                            <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Start Now!</a>
-                            <a href="#contact" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                            <a href="#" id="openLoginPopup" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Start Now!</a>
+                            <a href="#" id="requestLogin" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Request Demo</a>
                         </div>
-                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.1s" >
+                        <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.1s" >
                             <div class="img">
-                                <img src="img/new.png" alt="">
+                                <img src="img/HomeImg.png" alt="">
                             </div>
 
                         </div>
@@ -87,28 +86,152 @@
                 </div>
             </div>
         </div>
-        <!-- Navbar & Hero End -->
+<!-- Navbar & Hero End -->
+<!--Start login -->
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="closeBtn"> <i class="fas fa-times"></i> </span>
+            <h2 class="mb-4">SignIn</h2>
+            <form id="loginForm">
+                <input type="text" class="form-control" id="name" placeholder="Your Name" name="name">
+                <!-- <label for="name">Your Name</label> -->
+                <input type="email" class="form-control" id="email" placeholder="Your Email" name="email">
+                <!-- <label for="email">Your Email</label> -->
+                <input type="number" class="form-control" id="phone" placeholder="Your Number" name="phone">
+                <!-- <label for="number">Your Number</label> -->
 
-        <!-- features Start -->
-        <div class="container-xxl py-0" id="features">
-            <div class="container py-5 px-lg-5">
-                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-primary-gradient fw-medium">What We Can Do?</h5>
-                    <h1 class="mb-5">OUR FEATURES</h1>
-                </div>
-                <div class="row gy-5 gx-4 justify-content-center">
-                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+
+                <button class="nextBtn mt-3" type="submit" >Next</button>
+            </form>
+        </div>
+    </div>
+    <!-- start confirm message -->
+    <div id="confirmationPopup" class="popup">
+        <div class="popup-content">
+            <h2>Thank you for your request!</h2>
+            <p>Your request has been received. We will contact you soon!</p>
+        </div>
+    </div>
+    <!-- End confirm message -->
+            
+<!--End login -->
+
+<!--start 3 questions -->
+<div class="container-xxl py-2" id="">
+    <div class="container  py-2 px-lg-2 ">
+        <section class="courses">
+            <div class="text-center wow fadeInUp " data-wow-delay="0.1s">
+                <h5 class="text-primary-gradient fw-medium ">Why Postr?</h5>
+                <h1 class="mb-3">Make an impact that truly matters!</h1>
+            </div>
+            <div class=" courses-container mt-5">
+                <article class="course wow fadeInUp" data-wow-delay="0.1s">
+                    <h4>What if you could post content across all your accounts from one place?</h4>
+                    <div class="line">
+                        <!-- <img src="img/courses  (4).jpg" alt=""> -->
+                    </div>
+                    <div class="course-info pt-4">
+                        <ul class="answers">
+                            <li class="answer">
+                                <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                <p class="m-0">Save Time: Publish to all profiles with one click.</p></li>
+                                <li class="answer">
+                                <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                <p class="m-0">Simplify Management: Control all accounts from one platform</p></li>
+                                <li class="answer">
+                                <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                <p class="m-0">Consistent messaging across all platforms.
+                                    .</p></li>
+                                <li class="answer">
+                                <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                <p class="m-0">Track Performance: Get insights from a single dashboard.</p></li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" style="display: block;color: white;">Start your free trial</a>
+                    </div>
+                </article>
+            
+                <article class="course wow fadeInUp" data-wow-delay="0.1s">
+                    <h4>Want to triple your time savings with AI-driven content?</h4>
+                    <div class="line">
+                        <!-- <img src="img/courses  (4).jpg" alt=""> -->
+                    </div>
+                    <div class="course-info pt-4">
+                        <ul class="answers">
+                            <li class="answer">
+                                <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                <p class="m-0">Triple your efficiency with automated content creation.</p></li>
+                                <li class="answer">
+                                <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                <p class="m-0">Boost productivity by creating high-quality content quickly.</p></li>
+                                <li class="answer">
+                                <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                <p class="m-0">Smart insights with performance tracking to refine your strategy.</p></li>
+                                <li class="answer">
+                                <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                <p class="m-0">Effortless management and posting across all your platforms.</p></li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" style="display: block;color: white;">Watch the demo now</a>
+                    </div>
+                </article>
+            
+                <article class="course wow fadeInUp" data-wow-delay="0.1s">
+                    <h4>Comprehensive advanced security that exceeds expectations!</h4>
+                    <div class="line">
+                        <!-- <img src="img/courses  (4).jpg" alt=""> -->
+                    </div>
+                    <div class="course-info pt-4">
+                        <ul class="answers">
+                            <li class="answer">
+                                <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                <p class="m-0">Two-factor authentication ensures secure access.</p></li>
+                                <li class="answer">
+                                <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                <p class="m-0">Advanced encryption protects your data at every step.</p></li>
+                                <li class="answer">
+                                <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                <p class="m-0"> Access management provides flexible permission controls.</p></li>
+                                <li class="answer">
+                                <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                <p class="m-0">Instant alerts for suspicious account activity.</p></li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" style="display: block;color: white;">Choose your plan now</a>
+                    </div>
+                </article>
+            
+            </div>
+        </section>
+    </div>
+</div>
+<!--End 3 questions -->
+
+<!-- features Start -->
+<div class="container-xxl py-5" id="features">
+    <div class="container py-5 px-lg-5">
+        <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+            <h5 class="text-primary-gradient fw-medium">What We Can Do?</h5>
+            <h1 class="mb-5">OUR FEATURES</h1>
+        </div>
+        <div class="row gy-5 gx-4 justify-content-center">
+            <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
                             <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 60px; height: 60px;">
                                 <i class="fas fa-sync-alt fa-2x text-white"></i>
                             </div>
                             <h5 class="mt-2 mb-3">Unlimited automated & Bulk posts</h5>
                             <div class="list">
-                                <ul class="list-item">
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Schedule unlimited posts for automatic publishing.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Upload a large batch of posts simultaneously.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Pre-set the timing for content publication.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Automated posting across multiple platforms in one action.</li>
+                                <ul class="answers">
+                                    <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Schedule unlimited posts for automatic publishing.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Upload a large batch of posts simultaneously.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Pre-set the timing for content publication.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Automated posting across multiple platforms in one action.</p></li>
                                 </ul>
                             </div>
                         </div>
@@ -120,11 +243,19 @@
                             </div>
                             <h5 class="mt-2 mb-3"> Multi language En, Ar,..etc & RTL Support</h5>
                             <div class="list">
-                                <ul class="list-item">
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Support for multiple languages for writing posts.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Full compatibility with right-to-left languages.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Automatic content translation capabilities.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Customize posts to suit different cultural preferences.</li>
+                                <ul class="answers">
+                                    <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Support for multiple languages for writing posts.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Full compatibility with right-to-left languages.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Automatic content translation capabilities.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Customize posts to suit different cultural preferences.</p></li>
                                 </ul>
                             </div>
                         </div>
@@ -137,11 +268,19 @@
                             </div>
                             <h5 class="mt-2 mb-3"> Very Easy Drag & Drop Interface</h5>
                             <div class="list">
-                                <ul class="list-item">
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Simple drag-and-drop design for creating posts.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i> Easily rearrange elements in the interface.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Flexible addition of images and videos.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Ready-made templates to help with quick customization.</li>
+                                <ul class="answers">
+                                    <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Simple drag-and-drop design for creating posts.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Easily rearrange elements in the interface.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Flexible addition of images and videos.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Ready-made templates to help with quick customization.</p></li>
                                 </ul>
                             </div>
                         </div>
@@ -153,11 +292,19 @@
                             </div>
                             <h5 class="mt-2 mb-3">All social media Platforms</h5>
                             <div class="list">
-                                <ul class="list-item">
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Support for posting on Facebook, Instagram, Twitter, and LinkedIn.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Integration with other platforms like TikTok and YouTube.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Compatibility with new platforms as they are released.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Seamless publishing across all platforms from a single interface.</li>
+                                <ul class="answers">
+                                    <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Support for posting on Facebook, Instagram, Twitter, and LinkedIn.</p></li>
+                                        <li class="answer">
+                                            <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                            <p class="m-0" style="text-align: left;">Integration with other platforms like TikTok and YouTube.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Compatibility with new platforms as they are released.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Seamless publishing across all platforms from a single interface.</p></li>
                                 </ul>
                             </div>
                         </div>
@@ -169,11 +316,19 @@
                             </div>
                             <h5 class="mt-2 mb-3">Unlimited social media accounts </h5>
                             <div class="list">
-                                <ul class="list-item">
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Manage an unlimited number of accounts in one place.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Easily customize content for each account.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Integrate personal and business accounts.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Support for all account types, like pages and groups.</li>
+                                <ul class="answers">
+                                    <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Manage an unlimited number of accounts in one place.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Easily customize content for each account.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Integrate personal and business accounts.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Support for all account types, like pages and groups.</p></li>
                                 </ul>
                             </div>                        
                         </div>
@@ -185,11 +340,19 @@
                             </div>
                             <h5 class="mt-2 mb-3">Unlimited AI Post Composer</h5>
                             <div class="list">
-                                <ul class="list-item">
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>AI Composer Generate text, images, and videos.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Flexible Posting Instant or scheduled.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Great for Creators Boost engagement easily.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Powered by OpenAI ChatGPT 3.5, 4.0 (DALL-E).</li>
+                                <ul class="answers">
+                                    <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">AI Composer Generate text, images, and videos.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Flexible Posting Instant or scheduled.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Great for Creators Boost engagement easily.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Powered by OpenAI ChatGPT 3.5, 4.0 (DALL-E).</p></li>
                                 </ul>
                             </div>
                         </div>
@@ -201,11 +364,19 @@
                             </div>
                             <h5 class="mt-2 mb-3">Powerful Analytic</h5>
                             <div class="list">
-                                <ul class="list-item">
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Detailed reports on post performance.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Precise analytics on reach and engagement.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Recommendations to enhance content strategies.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Visual data presentation for easy understanding.</li>
+                                <ul class="answers">
+                                    <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Detailed reports on post performance.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Precise analytics on reach and engagement.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Recommendations to enhance content strategies.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Visual data presentation for easy understanding.</p></li>
                                 </ul>
                             </div>
                         </div>
@@ -217,299 +388,297 @@
                             </div>
                             <h5 class="mt-2 mb-3">Live Streaming</h5>
                             <div class="list">
-                                <ul class="list-item">
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Support for live streaming on multiple platforms.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Schedule live streams in advance.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Integrate comments and engage with the audience during the stream.</li>
-                                    <li class="item"><i class="fas fa-check answer-icon"></i>Handy tools to manage and coordinate the live broadcast effectively.</li>
-                                </ul>
-                            </div>
+                                <ul class="answers">
+                                    <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Support for live streaming on multiple platforms.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Schedule live streams in advance.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Integrate comments and engage with the audience during the stream.</p></li>
+                                        <li class="answer">
+                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
+                                        <p class="m-0" style="text-align: left;">Handy tools to manage and coordinate the live broadcast effectively.</p></li>
+                                    </ul>
+                                </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div> 
-        <!-- Process Start -->
+<!-- End features -->
+
+<!-- Start what we support -->
+    <div class="container-xxl py-4 bg-light wow fadeInUp" id="" data-wow-delay="0.1s">
+        <div class="container py-3 px-lg-3">
+            <h2 class="head-item">We support all the popular platforms</h2>
+            <div class="social-icons wow fadeInUp"  data-wow-delay="0.1s">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" class="social-link">
+                    <i class="fab fa-facebook"></i>
+                    <span class="icon-name">Facebook</span>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                    <span class="icon-name">Twitter</span>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok" class="social-link">
+                    <i class="fab fa-tiktok"></i>
+                    <span class="icon-name">TikTok</span>
+                </a>
+                <a href="https://wa.me/123456789" target="_blank" aria-label="WhatsApp" class="social-link">
+                    <i class="fab fa-whatsapp"></i>
+                    <span class="icon-name">WhatsApp</span>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                    <span class="icon-name">Instagram</span>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span class="icon-name">LinkedIn</span>
+                </a>
+                <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest" class="social-link">
+                    <i class="fab fa-pinterest"></i>
+                    <span class="icon-name">Pinterest</span>
+                </a>
+                <a href="https://telegram.me/your_channel" target="_blank" aria-label="Telegram" class="social-link">
+                    <i class="fab fa-telegram"></i>
+                    <span class="icon-name" >Telegram</span>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube" class="social-link">
+                    <i class="fab fa-youtube"></i>
+                    <span class="icon-name" >YouTube</span>
+                </a>
+                <a href="https://www.example.com" target="_blank" aria-label="Website" class="social-link">
+                    <i class="fas fa-globe"></i>
+                    <span class="icon-name">Website</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+<!-- End what we support -->
 
 
-        <!-- Pricing Start -->
-        <div class="container-xxl py-5" id="pricing">
-            <div class="container py-5 px-lg-5">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-primary-gradient fw-medium">Pricing Plan</h5>
-                    <h1 class="mb-5">Choose Your Plan</h1>
-                </div>
-                <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
-                    <ul class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
-                        <li class="nav-item">
-                            <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Monthly</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="nav-link" data-bs-toggle="pill" href="#tab-2">Yearly</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content text-start">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row g-4">
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Starter Plan</h4>
-                                            <span>Powerful & Awesome Features</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>14.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded border">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Advance Plan</h4>
-                                            <span>Powerful & Awesome Features</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>24.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Premium Plan</h4>
-                                            <span>Powerful & Awesome Features</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>34.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
-                                        </div>
-                                    </div>
-                                </div>
+<!-- Start Pricing Start -->
+<div class="container-xxl py-4" id="pricing">
+<div class="container py-5 px-lg-5">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h5 class="text-primary-gradient fw-medium">Pricing Plan</h5>
+        <h1 class="mb-5">Choose Your Plan</h1>
+    </div>
+    <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
+        <div class="nav nav-pills d-inline-flex justify-content-center  rounded-pill mb-5 " style="
+        padding: 20px 50px;
+        font-size: 24px;">
+        <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Monthly</button>
+        </div>
+        <div class="tab-content text-start">
+            <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="bg-light rounded">
+                            <div class="border-bottom p-4 mb-4">
+                                <h4 class="text-primary-gradient mb-1">Premium</h4>
+                            </div>
+                            <div class="p-4 pt-0">
+                                <h1 class="mb-3">
+                                    <span class="" style="font-size: 16px; line-height: 45px;">SAR</span> 39<small
+                                        class="" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                </h1>
+                                <div class="d-flex justify-content-between mb-3"><span>All features</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Unlimited scheduled posts</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>10 social media accounts</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>1 team member</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>100 AI Credits</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>1GB storage size</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <a href="#pricing" id="tab1-open" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
                             </div>
                         </div>
-                        <div id="tab-2" class="tab-pane fade p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Starter Plan</h4>
-                                            <span>Powerful & Awesome Features</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>114.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yearly</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded border">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Advance Plan</h4>
-                                            <span>Powerful & Awesome Features</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>124.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yearly</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Premium Plan</h4>
-                                            <span>Powerful & Awesome Features</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>134.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yearly</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bg-light rounded border">
+                            <div class="border-bottom p-4 mb-4">
+                                <h4 class="text-primary-gradient mb-1">Enterprise</h4>
+                            </div>
+                            <div class="p-4 pt-0">
+                                <h1 class="mb-3">
+                                    <small class="" style="font-size: 16px; line-height: 45px;">SAR</small> 59<small
+                                        class="" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                </h1>
+                                <div class="d-flex justify-content-between mb-3"><span>All features</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Unlimited scheduled posts</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>30 social media accounts</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>3 team members</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>300 AI Credits</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>3GB storage size</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <a href="#pricing" id="tab2-open" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bg-light rounded">
+                            <div class="border-bottom p-4 mb-4">
+                                <h4 class="text-primary-gradient mb-1">Agency</h4>
+                            </div>
+                            <div class="p-4 pt-0">
+                                <h1 class="mb-3">
+                                    <small class="" style="font-size: 16px; line-height: 45px;">SAR</small>119<small
+                                        class="" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                </h1>
+                                <div class="d-flex justify-content-between mb-3"><span>All features</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>Unlimited scheduled posts</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>100 social media accounts</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>10 team members</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>1000 AI Credits</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <div class="d-flex justify-content-between mb-3"><span>10GB storage size</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                <a href="#pricing" id="tab3-open" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
-        
-        <!-- Pricing End -->
-
-        
-        <!-- Testimonial Start -->
-        <div class="container-xxl py-s bg-light" id="review">
-            <div class="container py-5 px-lg-5">
-                <div class="reveiw">
-                    <div class="text-center wow fadeInUp " data-wow-delay="0.1s">
-                        <h5 class="text-primary-gradient fw-medium ">Testimonial</h5>
-                        <h1 class="mb-3">Make a positive change</h1>
-                        <p>We asked our customers, "How has switching to Postr improved your experience?"  
-                            Here’s a glimpse of their responses.</p>
-                    </div>
-                    <div class="review-boxs  wow fadeInUp mt-5">
-                             <div class=" review-box testimonial-item rounded p-4 bg-white">
-                            <div class="d-flex align-items-center mb-4">
-                                <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/t5.jpg" style="width: 75px; height: 75px;">
-                                <div class="ms-4">
-                                    <h5 class="mb-1 fs-6">Ahmad Mustafa</h5>
-                                    <p class="mb-1 fs-6" >Writer, Editor, Social Medai Content Marketer</p>
-                                    <div>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="mb-0">Postr is super easy to use. You can schedule content for months with its automation features, covering major platforms like Facebook, Instagram, LinkedIn, and Twitter. It also supports Instagram Carousels and Facebook Group posts, offering great value.
-                            </p>
-                        </div>
+    </div>
+</div>
+</div>
+<!-- End Pricing End -->
 
 
-                             <div class="testimonial-item rounded review-box p-4 bg-white">
-                            <div class="d-flex align-items-center mb-4">
-                                <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/t1.jpg" style="width: 75px; height: 75px;">
-                                <div class="ms-4">
-                                    <h5 class="mb-1 fs-6">Sarah Johnson</h5>
-                                    <p class="mb-1 fs-6" >Content Marketing Specialist</p>
-                                    <div>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star-half-alt text-warning"></small>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="mb-0">I was looking for a tool to manage my social media accounts, and my experience with Postr has been great. The interface is simple and easy, making it super easy for me to get started.</p>
-                        </div>
-
-
-                             <div class="testimonial-item rounded p-4 bg-white review-box" >
-                            <div class="d-flex align-items-center mb-4">
-                                <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/t2.jpg" style="width: 75px; height: 75px;">
-                                <div class="ms-4">
-                                    <h5 class="mb-1 fs-6">Ahmed Ali</h5>
-                                    <p class="mb-1 fs-6" >Customer Success Manager</p>
-                                    <div>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="mb-0">My experience with this platform has exceeded my expectations. Its performance is excellent, and I highly recommend it.</p>
-                        </div>
-
-
-                             <div class="testimonial-item rounded p-4 bg-white review-box" >
-                            <div class="d-flex align-items-center mb-4">
-                                <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/t4.jpg" style="width: 75px; height: 75px;">
-                                <div class="ms-4">
-                                    <h5 class="mb-1 fs-6">Noor Hasan</h5>
-                                    <p class="mb-1 fs-6" >Senior Graphic Designer</p>
-                                    <div>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star-half-alt text-warning"></small>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="mb-0">I love the automatic scheduling feature. It makes things so much easier when I'm busy.</p>
-                        </div>
-
-
-                             <div class="testimonial-item rounded p-4 bg-white review-box">
-                            <div class="d-flex align-items-center mb-4">
-                                <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/t3.jpg" style="width: 75px; height: 75px;">
-                                <div class="ms-4">
-                                    <h5 class="mb-1 fs-6">Emily Chen</h5>
-                                    <p class="mb-1 fs-6" >Digital Product Manager</p>
-                                    <div>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="mb-0">My experience with this platform has been seamless. The available analytics tools help me better understand audience engagement. I recommend it to anyone looking to improve their social media presence.</p>
-                        </div>
-
- 
-                             <div class="testimonial-item rounded p-4 bg-white review-box">
-                            <div class="d-flex align-items-center mb-4">
-                                <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-3.jpg" style="width: 75px; height: 75px;">
-                                <div class="ms-4">
-                                    <h5 class="mb-1 fs-6">David Garcia</h5>
-                                    <p class="mb-1 fs-6" >Social Media Strategist</p>
-                                    <div>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star text-warning"></small>
-                                        <small class="fa fa-star-half-alt text-warning"></small>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="mb-0">I love how the customer support is always available. They had quick answers to all my questions.</p>
-                        </div>
-                        </div>
-                </div>
+<!-- Testimonial Start -->
+<div class="container-xxl py-s bg-light" id="review">
+    <div class="container py-5 px-lg-5">
+        <div class="reveiw">
+            <div class="text-center wow fadeInUp " data-wow-delay="0.1s">
+                <h5 class="text-primary-gradient fw-medium ">Testimonial</h5>
+                <h1 class="mb-3">Make a positive change</h1>
+                <p>We asked our customers, "How has switching to Postr improved your experience?"  
+                    Here’s a glimpse of their responses.</p>
             </div>
-        </div>
-        <!-- Testimonial End -->
+            <div class="review-boxs  wow fadeInUp mt-5">
+                        <div class=" review-box testimonial-item rounded p-4 bg-white">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/t5.jpg" style="width: 75px; height: 75px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1 fs-6">Ahmad Mustafa</h5>
+                            <p class="mb-1 fs-6" >Writer, Editor, Social Medai Content Marketer</p>
+                            <div>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-0">Postr is super easy to use. You can schedule content for months with its automation features, covering major platforms like Facebook, Instagram, LinkedIn, and Twitter. It also supports Instagram Carousels and Facebook Group posts, offering great value.
+                    </p>
+                </div>
 
-    <!--Start Faq -->
+
+                        <div class="testimonial-item rounded review-box p-4 bg-white">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/t2.jpg" style="width: 75px; height: 75px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1 fs-6">Omar Al-Mansour</h5>
+                            <p class="mb-1 fs-6" >Content Marketing Specialist</p>
+                            <div>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star-half-alt text-warning"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-0">I was looking for a tool to manage my social media accounts, and my experience with Postr has been great. The interface is simple and easy, making it super easy for me to get started.</p>
+                </div>
+
+
+                        <div class="testimonial-item rounded p-4 bg-white review-box" >
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/q1.jpg" style="width: 75px; height: 75px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1 fs-6">Layla Hassan</h5>
+                            <p class="mb-1 fs-6" >Customer Success Manager</p>
+                            <div>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-0">My experience with this platform has exceeded my expectations. Its performance is excellent, and I highly recommend it.</p>
+                </div>
+
+
+                        <div class="testimonial-item rounded p-4 bg-white review-box" >
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/yt7.jpg" style="width: 75px; height: 75px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1 fs-6">Khaled Al-Farouq</h5>
+                            <p class="mb-1 fs-6" >Senior Graphic Designer</p>
+                            <div>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star-half-alt text-warning"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-0">I love the automatic scheduling feature. It makes things so much easier when I'm busy.</p>
+                </div>
+
+
+                        <div class="testimonial-item rounded p-4 bg-white review-box">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/t8.jpg" style="width: 75px; height: 75px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1 fs-6">Rami Al-Jabari</h5>
+                            <p class="mb-1 fs-6" >Digital Product Manager</p>
+                            <div>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-0">My experience with this platform has been seamless. The available analytics tools help me better understand audience engagement. I recommend it to anyone looking to improve their social media presence.</p>
+                </div>
+
+
+                        <div class="testimonial-item rounded p-4 bg-white review-box">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/q2.jpg" style="width: 75px; height: 75px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1 fs-6">Sarah Al-Tamimi</h5>
+                            <p class="mb-1 fs-6" >Social Media Strategist</p>
+                            <div>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star-half-alt text-warning"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-0">I love how the customer support is always available. They had quick answers to all my questions.</p>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+<!--Start Faq -->
         <div class="container-xxl py-5 bg-light mt-5" id="faq" >
             <div class="container py-5 px-lg-5">
                     <h2 class="wow fadeInUp" data-wow-delay="0.1s">Frequently Asked Questions</h2>
@@ -611,98 +780,8 @@
         </div>
 <!--End Faq -->
 
-<!-- 3 questions -->
-        <div class="container-xxl py-5" id="">
-            <div class="container  py-5 px-lg-5 ">
-                <section class="courses">
-                    <div class="text-center wow fadeInUp " data-wow-delay="0.1s">
-                        <h5 class="text-primary-gradient fw-medium ">Why Postr</h5>
-                        <h1 class="mb-3">Make a positive change</h1>
-                    </div>
-                    <div class=" courses-container mt-5">
-                        <article class="course wow fadeInUp" data-wow-delay="0.1s">
-                            <h4>What if you could post content across all your accounts from one place?</h4>
-                            <div class="line">
-                                <!-- <img src="img/courses  (4).jpg" alt=""> -->
-                            </div>
-                            <div class="course-info pt-4">
-                                <ul class="answers">
-                                    <li class="answer">
-                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 20px;"></i>
-                                        <p class="m-0">Save Time: Publish to all profiles with one click.</p></li>
-                                        <li class="answer">
-                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 20px;"></i>
-                                        <p class="m-0">Simplify Management: Control all accounts from one platform</p></li>
-                                        <li class="answer">
-                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 20px;"></i>
-                                        <p class="m-0">Consistent messaging across all platforms.
-                                            .</p></li>
-                                        <li class="answer">
-                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 20px;"></i>
-                                        <p class="m-0">Track Performance: Get insights from a single dashboard.</p></li>
-                                </ul>
-                                <a href="#" class="btn btn-primary" style="display: block;color: white;">Start your free trial</a>
-                            </div>
-                        </article>
-                    
-                        <article class="course wow fadeInUp" data-wow-delay="0.1s">
-                            <h4>Want to triple your time savings with AI-driven content?</h4>
-                            <div class="line">
-                                <!-- <img src="img/courses  (4).jpg" alt=""> -->
-                            </div>
-                            <div class="course-info pt-4">
-                                <ul class="answers">
-                                    <li class="answer">
-                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 20px;"></i>
-                                        <p class="m-0">Triple your efficiency with automated content creation.</p></li>
-                                        <li class="answer">
-                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 20px;"></i>
-                                        <p class="m-0">Boost productivity by creating high-quality content quickly.</p></li>
-                                        <li class="answer">
-                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 20px;"></i>
-                                        <p class="m-0">Smart insights with performance tracking to refine your strategy.</p></li>
-                                        <li class="answer">
-                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 20px;"></i>
-                                        <p class="m-0">Effortless management and posting across all your platforms.</p></li>
-                                </ul>
-                                <a href="#" class="btn btn-primary" style="display: block;color: white;">Watch the demo now</a>
-                            </div>
-                        </article>
-                    
-                        <article class="course wow fadeInUp" data-wow-delay="0.1s">
-                            <h4>Comprehensive advanced security that exceeds expectations!</h4>
-                            <div class="line">
-                                <!-- <img src="img/courses  (4).jpg" alt=""> -->
-                            </div>
-                            <div class="course-info pt-4">
-                                <ul class="answers">
-                                    <li class="answer">
-                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 20px;"></i>
-                                        <p class="m-0">Two-factor authentication ensures secure access.</p></li>
-                                        <li class="answer">
-                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 20px;"></i>
-                                        <p class="m-0">Advanced encryption protects your data at every step.</p></li>
-                                        <li class="answer">
-                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 20px;"></i>
-                                        <p class="m-0"> Access management provides flexible permission controls.</p></li>
-                                        <li class="answer">
-                                        <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 20px;"></i>
-                                        <p class="m-0">Instant alerts for suspicious account activity.</p></li>
-                                </ul>
-                                <a href="#" class="btn btn-primary" style="display: block;color: white;">Choose your plan now</a>
-                            </div>
-                        </article>
-                    
-                    </div>
-                </section>
-            </div>
-        </div>
-
-<!-- 3 questions -->
-
-        <!-- mini features -->
-        
-        <div class="container-xxl py-2 bg-light" id="">
+<!--Start mini features -->      
+        <div class="container-xxl py-2 bg-light mt-5" id="">
             <div class="container py-5 px-lg-5">
             <div class="mini-features wow fadeInUp" data-wow-delay="0.1s">
                 <div class="row gy-5 gx-4 justify-content-center mini-feature">
@@ -726,9 +805,8 @@
             </div>
             </div>
         </div>
-        <!-- mini features -->
+<!--End mini features -->
          <!-- Brand -->
-
          <!-- <div class="container-xxl py-4" id="">
             <div class="container py-5 px-lg-5">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp";>
@@ -751,14 +829,13 @@
                 </div>
             </div>
         </div> -->
-
          <!-- Brand -->
 
         <!-- Contact Start -->
         <div class="container-xxl py-5" id="contact">
             <div class="container py-5 px-lg-5">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-primary-gradient fw-medium">Contact Us</h5>
+                    <h5 class="text-primary-gradient fw-medium">Request Demo</h5>
                     <h1 class="mb-5">Let’s Make Things Happen!</h1>
                 </div>
                 <div class="row justify-content-center">
@@ -803,7 +880,6 @@
         </div>
         <!-- Contact End -->
         
-
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5 px-lg-5">

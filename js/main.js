@@ -153,3 +153,127 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
   });
   
 
+// sign in
+
+// Get elements
+const loginLink = document.getElementById('loginLink');
+const openLoginPopup = document.getElementById('openLoginPopup'); 
+const requestLogin = document.getElementById('requestLogin'); 
+const tab1Open = document.getElementById('tab1-open'); 
+const tab2Open = document.getElementById('tab2-open'); 
+const tab3Open = document.getElementById('tab3-open'); 
+const loginPopup = document.getElementById('loginPopup');
+const closeBtn = document.getElementById('closeBtn');
+const loginForm = document.getElementById('loginForm');
+const confirmationPopup = document.getElementById('confirmationPopup');
+
+// Open the login popup when the link is clicked
+loginLink.onclick = function() {
+    loginPopup.style.display = 'block';
+}
+requestLogin.onclick = function() {
+    loginPopup.style.display = 'block';
+}
+tab1Open.onclick = function() {
+    loginPopup.style.display = 'block';
+}
+tab2Open.onclick = function() {
+    loginPopup.style.display = 'block';
+}
+tab3Open.onclick = function() {
+    loginPopup.style.display = 'block';
+}
+
+// Open the login popup when the button is clicked
+openLoginPopup.onclick = function() {
+    loginPopup.style.display = 'block';
+}
+
+// Close the login popup when the close button is clicked
+closeBtn.onclick = function() {
+    loginPopup.style.display = 'none';
+}
+
+// Close the login popup if the user clicks anywhere outside the popup content
+window.onclick = function(event) {
+    if (event.target === loginPopup) {
+        loginPopup.style.display = 'none';
+    }
+}
+
+// When the form is submitted, hide the login popup and show the confirmation popup
+loginForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // Hide the login popup
+    loginPopup.style.display = 'none';
+
+    // Show the confirmation popup
+    confirmationPopup.style.display = 'block';
+
+    // Set a timer to hide the confirmation popup after 8 seconds
+    setTimeout(function() {
+        confirmationPopup.style.display = 'none';
+    }, 1000); // 8 seconds = 8000 milliseconds
+
+    // Clear form fields
+    document.getElementById('username').value = '';
+    document.getElementById('password').value = '';
+});
+
+
+// const loginLink = document.getElementById('loginLink');
+// const openLoginPopup = document.getElementById('openLoginPopup'); 
+// const tab1Open = document.getElementById('tap1-open'); 
+// const tab2Open = document.getElementById('tap2-open'); 
+// const tab3Open = document.getElementById('tap3-open'); 
+// const requestLogin = document.getElementById('requestLogin'); 
+// const loginPopup = document.getElementById('loginPopup');
+// const closeBtn = document.getElementById('closeBtn');
+// const loginForm = document.getElementById('loginForm');
+// const confirmationPopup = document.getElementById('confirmationPopup');
+
+// loginLink.onclick = function() {
+//     loginPopup.style.display = 'block';
+// }
+
+// openLoginPopup.onclick = function() {
+//     loginPopup.style.display = 'block';
+// }
+// requestLogin.onclick = function() {
+//     loginPopup.style.display = 'block';
+// }
+// tab1Open.onclick = function() {
+//     loginPopup.style.display = 'block';
+// }
+// tab2Open.onclick = function() {
+//     loginPopup.style.display = 'block';
+// }
+// tab3Open.onclick = function() {
+//     loginPopup.style.display = 'block';
+// }
+
+// closeBtn.onclick = function() {
+//     loginPopup.style.display = 'none';
+// }
+
+// window.onclick = function(event) {
+//     if (event.target === loginPopup) {
+//         loginPopup.style.display = 'none';
+//     }
+// }
+
+// loginForm.addEventListener('submit', function(event) {
+//     event.preventDefault(); 
+
+//     loginPopup.style.display = 'none';
+
+//     confirmationPopup.style.display = 'block';
+
+//     setTimeout(function() {
+//         confirmationPopup.style.display = 'none';
+//     }, 1000);
+
+//     document.getElementById('username').value = '';
+//     document.getElementById('password').value = '';
+// });
