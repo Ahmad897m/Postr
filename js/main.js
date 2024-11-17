@@ -127,36 +127,14 @@ faqs.forEach(faq => {
         }
     })
 });
-
-// form 
-document.getElementById('myForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    const form = event.target;
-    const data = {
-      name: form.name.value,
-      email: form.email.value,
-      subject: form.subject.value,
-      message: form.message.value
-    };
-    
-    fetch('https://script.google.com/macros/s/AKfycbw0-7w-lDR4yw6Gg750RE2fjJPB9ytbmd0LMAFv9yCtL9c4RqY9mtQcIdJt8nsIqjWqWg/exec', {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    })
-    .then(() => alert("Form submitted successfully!"))
-    .catch(error => console.error("Error:", error));
-  });
-  
-
 // sign in
 
 // Get elements
 const loginLink = document.getElementById('loginLink');
+const Send = document.getElementById('send');
+const question1 = document.getElementById('question1');
+const question2 = document.getElementById('question2');
+const question3 = document.getElementById('question3');
 const openLoginPopup = document.getElementById('openLoginPopup'); 
 const requestLogin = document.getElementById('requestLogin'); 
 const tab1Open = document.getElementById('tab1-open'); 
@@ -167,7 +145,6 @@ const closeBtn = document.getElementById('closeBtn');
 const loginForm = document.getElementById('loginForm');
 const confirmationPopup = document.getElementById('confirmationPopup');
 
-// Open the login popup when the link is clicked
 loginLink.onclick = function() {
     loginPopup.style.display = 'block';
 }
@@ -183,97 +160,107 @@ tab2Open.onclick = function() {
 tab3Open.onclick = function() {
     loginPopup.style.display = 'block';
 }
+question1.onclick = function() {
+    loginPopup.style.display = 'block';
+}
+question2.onclick = function() {
+    loginPopup.style.display = 'block';
+}
+question3.onclick = function() {
+    loginPopup.style.display = 'block';
+}
 
-// Open the login popup when the button is clicked
 openLoginPopup.onclick = function() {
     loginPopup.style.display = 'block';
 }
 
-// Close the login popup when the close button is clicked
 closeBtn.onclick = function() {
     loginPopup.style.display = 'none';
 }
 
-// Close the login popup if the user clicks anywhere outside the popup content
 window.onclick = function(event) {
     if (event.target === loginPopup) {
         loginPopup.style.display = 'none';
     }
 }
 
-// When the form is submitted, hide the login popup and show the confirmation popup
-loginForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting
 
-    // Hide the login popup
+
+loginForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
     loginPopup.style.display = 'none';
 
-    // Show the confirmation popup
+
     confirmationPopup.style.display = 'block';
 
-    // Set a timer to hide the confirmation popup after 8 seconds
+
     setTimeout(function() {
         confirmationPopup.style.display = 'none';
-    }, 1000); // 8 seconds = 8000 milliseconds
+    }, 1000); 
 
-    // Clear form fields
-    document.getElementById('username').value = '';
-    document.getElementById('password').value = '';
 });
 
 
-// const loginLink = document.getElementById('loginLink');
-// const openLoginPopup = document.getElementById('openLoginPopup'); 
-// const tab1Open = document.getElementById('tap1-open'); 
-// const tab2Open = document.getElementById('tap2-open'); 
-// const tab3Open = document.getElementById('tap3-open'); 
-// const requestLogin = document.getElementById('requestLogin'); 
-// const loginPopup = document.getElementById('loginPopup');
-// const closeBtn = document.getElementById('closeBtn');
-// const loginForm = document.getElementById('loginForm');
-// const confirmationPopup = document.getElementById('confirmationPopup');
 
-// loginLink.onclick = function() {
-//     loginPopup.style.display = 'block';
-// }
 
-// openLoginPopup.onclick = function() {
-//     loginPopup.style.display = 'block';
-// }
-// requestLogin.onclick = function() {
-//     loginPopup.style.display = 'block';
-// }
-// tab1Open.onclick = function() {
-//     loginPopup.style.display = 'block';
-// }
-// tab2Open.onclick = function() {
-//     loginPopup.style.display = 'block';
-// }
-// tab3Open.onclick = function() {
-//     loginPopup.style.display = 'block';
-// }
+// form 
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const form = event.target;
+    const data = {
+      formType: 'form1',
+      name: form.name.value,
+      email: form.email.value,
+      subject: form.subject.value,
+      message: form.message.value
+    };
+    
+    fetch('https://script.google.com/macros/s/AKfycbxtTDetESV2KuzFb624CETOVjX231Zi9DQFI6FU2ScTwXitXH-m__mvDFb_lP-bMECCrA/exec', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(() => {
+        form.reset();
+        alert("Form submitted successfully!");
+    })
+    .catch(error => console.error("Error:", error));
+});
+  
 
-// closeBtn.onclick = function() {
-//     loginPopup.style.display = 'none';
-// }
+// form 2
 
-// window.onclick = function(event) {
-//     if (event.target === loginPopup) {
-//         loginPopup.style.display = 'none';
-//     }
-// }
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const form = event.target;
+    const data = {
+      formType: 'form2',
+      name: form.name.value,
+      email: form.email.value,
+      phone: form.phone.value
+    };
+    
+    fetch('https://script.google.com/macros/s/AKfycbxtTDetESV2KuzFb624CETOVjX231Zi9DQFI6FU2ScTwXitXH-m__mvDFb_lP-bMECCrA/exec', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(() => {
+        console.log(data)
+        form.reset();
+        // alert("Form submitted successfully!");
+    })
+    .catch(error => console.error("Error:", error));
+});
+  
 
-// loginForm.addEventListener('submit', function(event) {
-//     event.preventDefault(); 
-
-//     loginPopup.style.display = 'none';
-
-//     confirmationPopup.style.display = 'block';
-
-//     setTimeout(function() {
-//         confirmationPopup.style.display = 'none';
-//     }, 1000);
-
-//     document.getElementById('username').value = '';
-//     document.getElementById('password').value = '';
-// });
+// https://script.google.com/macros/s/AKfycbw0-7w-lDR4yw6Gg750RE2fjJPB9ytbmd0LMAFv9yCtL9c4RqY9mtQcIdJt8nsIqjWqWg/exec

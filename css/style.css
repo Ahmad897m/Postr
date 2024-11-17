@@ -549,7 +549,10 @@ img {
 }
 .answer {
     display: flex;
-    align-items: center;
+}
+.answers {
+    display: grid;
+    gap: 8px;
 }
 .line {
     width: 100%;
