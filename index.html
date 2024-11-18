@@ -48,11 +48,13 @@
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
                     <h1 class="m-0">Postr</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
+              </a>
+              <div class="d-flex gap-3">
+                  <a href="#" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 " id="BuyNow">Buy Now</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                  <span class="fa fa-bars"></span>
                 </button>
+            </div>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
                         <a href="#home" class="nav-item nav-link active">Home</a>
@@ -60,9 +62,9 @@
                         <a href="#pricing" class="nav-item nav-link">Pricing</a>
                         <a href="#review" class="nav-item nav-link">Review</a>
                         <a href="#faq" class="nav-item nav-link">FAQ</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                        <a href="#contact" class="nav-item nav-link">Request Demo</a>
                     </div>
-                    <a href="#" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block" id="loginLink">Start Free Trial</a>
+                    <a href="#" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block" id="loginLink">Buy Now</a>
                 </div>
             </nav>
 
@@ -70,7 +72,7 @@
                 <div class="container px-lg-5">
                     <div class="row g-5">
                         <div class="col-lg-6 text-center text-lg-start wow fadeInUp" data-wow-delay="0.1s">
-                            <h1 class="text-white mb-4 animated slideInDown">Unleash your ideas, plan ahead, and post with limitless possibilities!</h1>
+                            <h1 class="text-white mb-4 animated slideInDown">Unlimited Accounts, Superior Security, and an Unbeatable Price! </h1>
                             <p class="text-white pb-3 animated slideInDown">All type of posts and live streams 
                                 All your social media platforms</p>
                             <a href="#" id="openLoginPopup" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Start Now!</a>
@@ -108,6 +110,7 @@
     <!-- start confirm message -->
     <div id="confirmationPopup" class="popup">
         <div class="popup-content">
+            <span class="close-btn" id="ConfirmCloseBtn"> <i class="fas fa-times"></i> </span>
             <h2>Thank you for your request!</h2>
             <p>Your request has been received. We will contact you soon!</p>
         </div>
@@ -116,17 +119,61 @@
             
 <!--End login -->
 
+<!-- Start what we support -->
+<div class="container-xxl py-4 bg-light wow fadeInUp" id="" data-wow-delay="0.1s">
+    <div class="container py-3 px-lg-3">
+        <h2 class="head-item">We support all the popular platforms</h2>
+        <div class="social-madia wow fadeInUp"  data-wow-delay="0.1s">
+            <ul class="social-icons wow fadeInUp" data-wow-delay="0.1s">
+                <li class="social-link"> 
+                    <i class="fab fa-facebook"></i>
+                    <span class="icon-name">Facebook</span>
+                </li>
+                <li class="social-link"> 
+                    <i class="fab fa-twitter"></i>
+                    <span class="icon-name">Twitter</span>
+                </li>
+                <li class="social-link"> 
+                    <i class="fab fa-whatsapp"></i>
+                <span class="icon-name">WhatsApp</span>
+                </li>
+                <li class="social-link"> 
+                    <i class="fab fa-instagram"></i>
+                    <span class="icon-name">Instagram</span>
+                </li>
+                <li class="social-link"> 
+                <i class="fab fa-linkedin"></i>
+                <span class="icon-name">LinkedIn</span>
+                </li>
+                <li class="social-link"> 
+                    <i class="fab fa-pinterest"></i>
+                    <span class="icon-name">Pinterest</span>
+                </li>
+                <li class="social-link"> 
+                    <i class="fab fa-telegram"></i>
+                <span class="icon-name" >Telegram</span>
+                </li>
+                <li class="social-link"> 
+                    <i class="fab fa-youtube"></i>
+                <span class="icon-name" >YouTube</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End what we support -->
+
 <!--start 3 questions -->
-<div class="container-xxl py-2" id="">
+<div class="container-xxl py-5" id="">
     <div class="container  py-2 px-lg-2 ">
         <section class="courses">
             <div class="text-center wow fadeInUp " data-wow-delay="0.1s">
                 <h5 class="text-primary-gradient fw-medium ">Why Postr?</h5>
-                <h1 class="mb-3">Make an impact that truly matters!</h1>
+                <h1 class="mb-3">Three Reasons Why We're the Best </h1>
             </div>
             <div class=" courses-container mt-5">
                 <article class="course wow fadeInUp" data-wow-delay="0.1s">
-                    <h4>What if you could post content across all your accounts from one place?</h4>
+                    <h4>Why is Postr the perfect solution for your social media management needs?</h4>
                     <div class="line">
                         <!-- <img src="img/courses  (4).jpg" alt=""> -->
                     </div>
@@ -134,24 +181,23 @@
                         <ul class="answers">
                             <li class="answer">
                                 <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
-                                <p class="m-0">Save Time: Publish to all profiles with one click.</p></li>
+                                <p class="m-0">The most affordable subscription in the world of social media management.</p></li>
                                 <li class="answer">
                                 <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
-                                <p class="m-0">Simplify Management: Control all accounts from one platform</p></li>
+                                <p class="m-0">Unlimited number of accounts.</p></li>
                                 <li class="answer">
                                 <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
-                                <p class="m-0">Consistent messaging across all platforms.
-                                    .</p></li>
+                                <p class="m-0">High security by protecting your data with advanced encryption technologies.</p></li>
                                 <li class="answer">
                                 <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
-                                <p class="m-0">Track Performance: Get insights from a single dashboard.</p></li>
+                                <p class="m-0">A simple interface and ease of use for all users.</p></li>
                         </ul>
                         <a href="#" class="btn btn-primary " id="question1" style="display: block;color: white;">Start your free trial</a>
                     </div>
                 </article>
             
                 <article class="course wow fadeInUp" data-wow-delay="0.1s">
-                    <h4>Want to triple your time savings with AI-driven content?</h4>
+                    <h4>Save time by managing multiple accounts from one place!</h4>
                     <div class="line">
                         <!-- <img src="img/courses  (4).jpg" alt=""> -->
                     </div>
@@ -159,23 +205,23 @@
                         <ul class="answers">
                             <li class="answer">
                                 <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
-                                <p class="m-0">Triple your efficiency with automated content creation.</p></li>
+                                <p class="m-0">Support for multiple platforms like Facebook, Instagram, Twitter, LinkedIn, and more.</p></li>
                                 <li class="answer">
                                 <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
-                                <p class="m-0">Boost productivity by creating high-quality content quickly.</p></li>
+                                <p class="m-0">Unlimited account management, easily from a single dashboard.</p></li>
                                 <li class="answer">
                                 <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
-                                <p class="m-0">Smart insights with performance tracking to refine your strategy.</p></li>
+                                <p class="m-0">Flexible tools to help organize accounts effortlessly.</p></li>
                                 <li class="answer">
                                 <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
-                                <p class="m-0">Effortless management and posting across all your platforms.</p></li>
+                                <p class="m-0">Schedule posts from one place effortlessly.</p></li>
                         </ul>
                         <a href="#" class="btn btn-primary " id="question2" style="display: block;color: white;">Watch the demo now</a>
                     </div>
                 </article>
             
                 <article class="course wow fadeInUp" data-wow-delay="0.1s">
-                    <h4>Comprehensive advanced security that exceeds expectations!</h4>
+                    <h4>High-level security and advanced protection tools!</h4>
                     <div class="line">
                         <!-- <img src="img/courses  (4).jpg" alt=""> -->
                     </div>
@@ -183,16 +229,16 @@
                         <ul class="answers">
                             <li class="answer">
                                 <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
-                                <p class="m-0">Two-factor authentication ensures secure access.</p></li>
+                                <p class="m-0">Grant your team access to manage accounts without sharing passwords, ensuring added protection.</p></li>
                                 <li class="answer">
                                 <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
-                                <p class="m-0">Advanced encryption protects your data at every step.</p></li>
+                                <p class="m-0"> A multi-layered security system provides robust protection against cyberattacks. </p></li>
                                 <li class="answer">
                                 <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
-                                <p class="m-0">Instant alerts for suspicious account activity.</p></li>
+                                <p class="m-0"> We use firewalls, antivirus software, and anti-malware tools to safeguard your information. </p></li>
                                 <li class="answer">
                                 <i class="fas fa-check answer-icon" style="font-size: 18px;margin-bottom: 24px;"></i>
-                                <p class="m-0"> Access management provides flexible permission controls.</p></li>
+                                <p class="m-0">Your data is encrypted using the latest encryption technologies to ensure security. </p></li>
                         </ul>
                         <a href="#" class="btn btn-primary " id="question3" style="display: block;color: white;">Choose your plan now</a>
                     </div>
@@ -410,56 +456,6 @@
         </div> 
 <!-- End features -->
 
-<!-- Start what we support -->
-    <div class="container-xxl py-4 bg-light wow fadeInUp" id="" data-wow-delay="0.1s">
-        <div class="container py-3 px-lg-3">
-            <h2 class="head-item">We support all the popular platforms</h2>
-            <div class="social-icons wow fadeInUp"  data-wow-delay="0.1s">
-                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" class="social-link">
-                    <i class="fab fa-facebook"></i>
-                    <span class="icon-name">Facebook</span>
-                </a>
-                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter" class="social-link">
-                    <i class="fab fa-twitter"></i>
-                    <span class="icon-name">Twitter</span>
-                </a>
-                <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok" class="social-link">
-                    <i class="fab fa-tiktok"></i>
-                    <span class="icon-name">TikTok</span>
-                </a>
-                <a href="https://wa.me/123456789" target="_blank" aria-label="WhatsApp" class="social-link">
-                    <i class="fab fa-whatsapp"></i>
-                    <span class="icon-name">WhatsApp</span>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" class="social-link">
-                    <i class="fab fa-instagram"></i>
-                    <span class="icon-name">Instagram</span>
-                </a>
-                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn" class="social-link">
-                    <i class="fab fa-linkedin"></i>
-                    <span class="icon-name">LinkedIn</span>
-                </a>
-                <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest" class="social-link">
-                    <i class="fab fa-pinterest"></i>
-                    <span class="icon-name">Pinterest</span>
-                </a>
-                <a href="https://telegram.me/your_channel" target="_blank" aria-label="Telegram" class="social-link">
-                    <i class="fab fa-telegram"></i>
-                    <span class="icon-name" >Telegram</span>
-                </a>
-                <a href="https://www.youtube.com" target="_blank" aria-label="YouTube" class="social-link">
-                    <i class="fab fa-youtube"></i>
-                    <span class="icon-name" >YouTube</span>
-                </a>
-                <a href="https://www.example.com" target="_blank" aria-label="Website" class="social-link">
-                    <i class="fas fa-globe"></i>
-                    <span class="icon-name">Website</span>
-                </a>
-            </div>
-
-        </div>
-    </div>
-<!-- End what we support -->
 
 
 <!-- Start Pricing Start -->
@@ -574,7 +570,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="mb-0">Postr is super easy to use. You can schedule content for months with its automation features, covering major platforms like Facebook, Instagram, LinkedIn, and Twitter. It also supports Instagram Carousels and Facebook Group posts, offering great value.
+                    <p class="mb-0">Postr is easy to use, supports major platforms, and lets you schedule posts, including Instagram Carousels and Facebook Groups. Great value!
                     </p>
                 </div>
 
@@ -600,9 +596,9 @@
 
                         <div class="testimonial-item rounded p-4 bg-white review-box" >
                     <div class="d-flex align-items-center mb-4">
-                        <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/q1.jpg" style="width: 75px; height: 75px;">
+                        <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/ddd.jpg" style="width: 75px; height: 75px;">
                         <div class="ms-4">
-                            <h5 class="mb-1 fs-6">Layla Hassan</h5>
+                            <h5 class="mb-1 fs-6">Khalid Al-Fahad</h5>
                             <p class="mb-1 fs-6" >Customer Success Manager</p>
                             <div>
                                 <small class="fa fa-star text-warning"></small>
@@ -651,15 +647,15 @@
                             </div>
                         </div>
                     </div>
-                    <p class="mb-0">My experience with this platform has been seamless. The available analytics tools help me better understand audience engagement. I recommend it to anyone looking to improve their social media presence.</p>
+                    <p class="mb-0">This platform's analytics tools are excellent for understanding audience engagement. Highly recommend it for boosting social media presence!</p>
                 </div>
 
 
                         <div class="testimonial-item rounded p-4 bg-white review-box">
                     <div class="d-flex align-items-center mb-4">
-                        <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/q2.jpg" style="width: 75px; height: 75px;">
+                        <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/dsd.jpg" style="width: 75px; height: 75px;">
                         <div class="ms-4">
-                            <h5 class="mb-1 fs-6">Sarah Al-Tamimi</h5>
+                            <h5 class="mb-1 fs-6">Saif Al-Mutairi</h5>
                             <p class="mb-1 fs-6" >Social Media Strategist</p>
                             <div>
                                 <small class="fa fa-star text-warning"></small>
@@ -722,8 +718,8 @@
                         <article class="faq  wow fadeInUp"  data-wow-delay="0.1s">
                             <div class="faq-icon"><i class="fa-solid fa-plus"></i> </div>
                             <div class="question-answer">
-                                <h4 class="mb-0">Can I try the service for free?</h4>
-                                <p>Yes, we offer a 14-day free trial to experience all available features. Sign up now and start optimizing your digital strategy.
+                                <h4 class="mb-0">What subscription plans are available? </h4>
+                                <p>Several subscription plans are available to suit the needs of individuals and businesses.
                                 </p>
                             </div>
                         </article>
@@ -903,7 +899,6 @@
                         <a class="btn btn-link" href="#review">Review</a>
                         <a class="btn btn-link" href="#contact">Contact Us</a>
 
-                        <!-- <a class="btn btn-link" href="">Career</a> -->
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <h4 class="text-white mb-4">Features</h4>
@@ -920,19 +915,10 @@
             <div class="container px-lg-5">
                 <div class="copyright">
                     <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#home">Postr</a>, All Right Reserved. 
-
-							Designed By <a class="border-bottom" href="">Ahmad Mustafa</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="#home">Home</a>
-                                <a href="#features" >Cookies</a>
-                                <a href="#review">review</a>
-                                <a href="#faq">FQA</a>
-                            </div>
-                        </div>
+                        <ul class="links">
+                            <li> <a href="Privacy-policy.html" >Privacy policy </a></li>
+                            <li> <a href="Terms-of-use.html">Terms of use </a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -954,8 +940,6 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- https://script.google.com/macros/s/AKfycbw0-7w-lDR4yw6Gg750RE2fjJPB9ytbmd0LMAFv9yCtL9c4RqY9mtQcIdJt8nsIqjWqWg/exec -->
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
 

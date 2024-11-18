@@ -130,6 +130,8 @@ faqs.forEach(faq => {
 // sign in
 
 // Get elements
+const BuyNow = document.getElementById('BuyNow')
+const ConfirmCloseBtn = document.getElementById('ConfirmCloseBtn')
 const loginLink = document.getElementById('loginLink');
 const Send = document.getElementById('send');
 const question1 = document.getElementById('question1');
@@ -169,6 +171,9 @@ question2.onclick = function() {
 question3.onclick = function() {
     loginPopup.style.display = 'block';
 }
+BuyNow.onclick = function() {
+    loginPopup.style.display = 'block';
+}
 
 openLoginPopup.onclick = function() {
     loginPopup.style.display = 'block';
@@ -177,10 +182,17 @@ openLoginPopup.onclick = function() {
 closeBtn.onclick = function() {
     loginPopup.style.display = 'none';
 }
+ConfirmCloseBtn.onclick = function() {
+    confirmationPopup.style.display = 'none';
+}
+
 
 window.onclick = function(event) {
     if (event.target === loginPopup) {
         loginPopup.style.display = 'none';
+    }else(event.target === confirmationPopup)
+    {
+        confirmationPopup.style.display = 'none';
     }
 }
 
@@ -191,13 +203,7 @@ loginForm.addEventListener('submit', function(event) {
 
     loginPopup.style.display = 'none';
 
-
     confirmationPopup.style.display = 'block';
-
-
-    setTimeout(function() {
-        confirmationPopup.style.display = 'none';
-    }, 1000); 
 
 });
 

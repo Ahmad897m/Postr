@@ -275,7 +275,7 @@ h6,
 
 @media (max-width: 991.98px) {
     .hero-header {
-        padding: 6rem 0 9rem 0;
+        padding: 6rem 0 0rem 0;
     }
 }
 
@@ -731,11 +731,16 @@ ul {
 .icon-name{
     font-size: 12px;
     font-weight: 500;
-    margin-top: 5px;
+    margin-top: 5px;    
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .social-link i {
     font-size: 40px;
-
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .head-item {
     text-align: center;
@@ -743,12 +748,81 @@ ul {
     letter-spacing: 1.3px;
 }
 
+.links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
     
-
+#BuyNow {
+    display: none;
+}
     
+/* terms section */
+.terms-section p {
+    color: black;
+    font-weight: 500
+}
+.terms-section span {
+    font-weight: bold;
+}
+.terms-section h2 {
+    font-weight: 300 !important;
+    color: black;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.terms-section .part1 {
+    line-height: 32px;
+}
+.history {
+    color: black;
+    letter-spacing: 0.9px;
+    text-transform: capitalize;
+}
+.logo-item {
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    border-bottom: 1px solid #919294;
+    padding-bottom: 25px;
+}
+.part2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 1px solid #919294;
+    margin-top: 60px;
+    padding-top: 40px;
+}
+/* terms section */
 
+/* privacy-section */
+.privacy-section p {
+    color: black;
+    font-weight: 500
+}
+.privacy-section span {
+    font-weight: bold;
+}
+.privacy-section h2 {
+    font-weight: 300 !important;
+    color: black;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.privacy-section .part1 {
+    line-height: 32px;
+}
+.privacy-section .list {
+    list-style-type: disc;
+    padding: 0;
+    color: black;
+}
 
-
+/* privacy-section */
 
 
 
@@ -768,6 +842,10 @@ ul {
 /*Madia Queries*/
 @media screen and (max-width: 1024px) 
 {
+    #BuyNow {
+        display: block;
+    }
+    
     .container {
         width: var(--container-width-md);
     }
@@ -908,6 +986,9 @@ ul {
 
     .review-box {
         width: 100%;
+    }
+    #BuyNow{
+        display: block;
     }
     
     /*******************Navbar*******************/
