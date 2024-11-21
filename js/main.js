@@ -249,7 +249,10 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
       formType: 'form2',
       name: form.name.value,
       email: form.email.value,
-      phone: form.phone.value
+      phone: form.phone.value,
+      companyName: form.companyName.value,
+      companyLink: form.companyLink.value
+
     };
     
     fetch('https://script.google.com/macros/s/AKfycbxtTDetESV2KuzFb624CETOVjX231Zi9DQFI6FU2ScTwXitXH-m__mvDFb_lP-bMECCrA/exec', {

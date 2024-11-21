@@ -604,6 +604,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    justify-content: space-between;
 }
 .review-box {
     width: 325px;
@@ -642,7 +643,39 @@ ul {
     overflow: auto;
 }
 
-
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.box-item {
+    padding: 6px 18px;
+    display: block;
+    background: #93c47d;
+    color: white;
+    border: 1px solid black;
+    font-size: 18px;
+    font-weight: bold;
+} 
+.box {
+    position: relative;
+}
+.box-text {
+    width: 57px;
+    font-size: 15px;
+    top: 50px;
+    margin: 0;
+    left: -4px;
+    position: absolute;
+    color: black;
+}
+.box-line {
+    width: 100%;
+    height: 1px;
+    background:black;
+    border-radius: 20px;
+} 
 .popup-content {
     background: #F0F6FF;   
     position: absolute;
@@ -1044,10 +1077,12 @@ ul {
 
     /* mini features */
     .icon {
-        width: 25%;
+        width: 24%;
     }
     .icon i {
         font-size: 30px;
+        padding: 20px;
+
     }
     /* Brand */
     .brand {
